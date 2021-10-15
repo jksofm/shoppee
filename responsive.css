@@ -1,0 +1,122 @@
+/* Mobile & tablet */
+@media (max-width: 1023px){
+    :root{
+        --header-height: 80px;
+    }
+   .hide-on-mobile-tablet{
+       display: none;
+   }
+   .header{
+       position: fixed;
+       z-index: 4;
+       /* width: 100%; */
+       top: 0;
+       right: 0;
+       left: 0;
+   }
+   .header__body{
+       /* height:var(--header-height); */
+   }
+   .header__cart-box{
+    position: fixed;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    top: var(--header-height);
+   }
+  
+   .header__cart-box::before{
+       display: none;
+       
+   }
+ 
+   .header__cart-box{
+       padding : 0 40px;
+   }
+   .header-cart-btn{
+       margin-top: 20px;
+   }
+   .body{
+       margin-top:126px;
+   }
+   .header__sort-bar {
+       display: flex;
+   }
+   
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width:1023px){
+   .hide-on-tablet{
+       display: none;
+   }
+   .header__body-search-cart{
+    width: 100px;
+    justify-content: flex-end;
+}
+.header__body-search-quantity-cart{
+    right: 2px;
+}
+.header__logo{
+    display: none;
+}
+.header__body-input-history{
+    width: 400px;
+}
+.product-filter-page-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .product-filter-page-item{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .product-filter-page-item-link{
+        font-size: 1.4rem;
+    }
+    .product-filter-page-list{
+        padding: 0;
+    }
+    .header__body-search{
+        display: none;
+    }
+    .header__sort-bar-item{
+        padding: 0 20px;
+        
+    
+    }
+    .header__logo{
+        text-align: center;
+    }
+    .header__body-search-cart{
+     justify-content: flex-end;
+    }
+    .header__body-search-quantity-cart{
+        right : 52px;
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+    }
+    .search-mobile{
+       display: block; 
+    }
+    .header__cart-heading{
+        text-align:center;
+    }
+    .footer-content{
+        padding: 0 40px;
+    }
+    .product {
+        margin-top : 10px;
+    }
+    .mobile-categori{
+        display:block;
+    }
+}
